@@ -3467,6 +3467,10 @@ input[type=checkbox] {
   background-color: #f8f8f8;
 }
 
+#wrap {
+  overflow: hidden;
+}
+
 .inner {
   position: relative;
   width: 100%;
@@ -3519,41 +3523,6 @@ input[type=checkbox] {
 }
 #skip-nav.type1 a:focus {
   color: #1d1d1d;
-}
-
-.sec-g {
-  overflow: hidden;
-  padding: 10vw 0;
-}
-.sec-g__tit {
-  padding-bottom: 2.34375vw;
-  font-size: 4.8rem;
-}
-.sec-g__more {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  font-size: 2rem;
-}
-@media (min-width: 600px) {
-  .sec-g__more {
-    right: 30px;
-  }
-}
-.sec-g__more::after {
-  content: "\f061";
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  background: #e4e4e4;
-  border-radius: 50%;
 }
 
 #header {
@@ -3787,8 +3756,68 @@ input[type=checkbox] {
   left: 0;
 }
 
+.intro {
+  height: 100vh;
+}
+.intro__title {
+  position: absolute;
+  top: 340px;
+  left: 0;
+}
+.intro__content {
+  display: block;
+  position: absolute;
+  bottom: 140px;
+  right: 0;
+}
+
+.sec-g {
+  overflow: hidden;
+  padding: 10vw 0;
+}
+.sec-g__tit {
+  padding-bottom: 2.34375vw;
+  font-size: 4.8rem;
+}
+.sec-g__more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  font-size: 2rem;
+}
+@media (min-width: 600px) {
+  .sec-g__more {
+    right: 30px;
+  }
+}
+.sec-g__more::after {
+  content: "\f061";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #e4e4e4;
+  border-radius: 50%;
+}
+
 :root {
   --swiper-theme-color: red;
+}
+
+.intro .inner {
+  background: #b8b8b8;
+}
+.intro__title {
+  font-size: 4rem;
+}
+.intro__content {
+  font-size: 1.6rem;
 }
 
 .swiper {
