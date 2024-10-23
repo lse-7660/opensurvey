@@ -9,7 +9,7 @@ var swiper = new Swiper(".slide-intro", {
   },
 });
 
-var swiper = new Swiper(".slide-studio", {
+var swiper = new Swiper(".slide-main-research", {
   slidesPerView: 1,
   spaceBetween: 20,
   pagination: {

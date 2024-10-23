@@ -81,22 +81,28 @@
     justify-content: space-between;
     align-items: center;
     max-width: none;
-    height: 73px;
+    height: 40px;
+    @include tablet {
+      height: 60px;
+    }
     @include tabletMore {
-      height: auto;
+      height: 70px;
     }
   }
   #logo {
-    transform: scale(0.8);
-    transform-origin: 0 50%;
-    @include tabletMore {
-      transform: none;
-    }
     a {
       display: block;
-      width: 200px;
-      height: 35px;
-      background: url("../../../resources/images/pattern/common/head_logo.png") no-repeat 0 0 / contain;
+      width: 103px;
+      height: 24px;
+      background: url("../../../resources/images/component/common/logo-opensurvey.svg") no-repeat 0 0 / contain;
+      @include tablet {
+        width: 93px;
+        height: 22px;
+      }
+      @include tabletMore {
+        width: 160px;
+        height: 36px;
+      }
     }
     span {
       @include sr-only;
@@ -279,49 +285,43 @@
 
 // intro layout
 .intro {
+  display: flex;
+  align-items: center;
   height: 100vh;
-  &__title {
-    position: absolute;
-    top: 340px;
-    left: 0;
-  }
-  &__content {
-    display: block;
-    position: absolute;
-    bottom: 140px;
-    right: 0;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+
+    @include tablet {
+      gap: 20vh;
+    }
+    @include tabletMore {
+      gap: 30vh;
+      padding-top: 10vh;
+    }
   }
 }
 
 // section layout
 .sec-g {
-  overflow: hidden;
-  padding: 10vw 0;
-  &__tit {
-    padding-bottom: 2.34375vw;
-    font-size: 4.8rem;
+  .sec-txt {
+    margin-bottom: 100px;
   }
-  &__more {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
-    top: 17px;
-    right: $p-mobile;
-    font-size: 2rem;
-    @include mobileMore {
-      right: $p-tablet;
-    }
-    &::after {
-      content: "\f061";
-      @include lineAwesome;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      background: $gray-20;
-      border-radius: 50%;
-    }
+  overflow: visibel;
+  padding: 60px 0;
+  &__label {
+    margin-bottom: 40px;
+    font-size: $font-size-label-xsm;
+    color: $gray-70;
+  }
+  &__tit {
+    padding-bottom: 10px;
+    font-size: $font-size-title-xlg;
+    color: $gray-90;
+  }
+  &__desc {
+    font-size: $font-size-body-sm;
+    color: $gray-80;
   }
 }
