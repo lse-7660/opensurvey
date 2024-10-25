@@ -288,11 +288,11 @@
 }
 
 .text-gray-5 {
-  color: #f8f8f8;
+  color: #fcfcfc;
 }
 
 .bg-gray-5 {
-  background-color: #f8f8f8;
+  background-color: #fcfcfc;
 }
 
 .text-gray-10 {
@@ -2394,6 +2394,101 @@ caption {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+@media (min-width: 600px) and (max-width: 1023px) {
+  .card-main-1 {
+    min-height: 417px;
+  }
+  .card-main-1__img {
+    margin-bottom: 40px;
+  }
+  .card-main-1__img img {
+    width: 150px;
+    height: 150px;
+  }
+  .card-main-1__img span {
+    font-size: 7.5rem;
+  }
+  .card-main-1__txt h3 {
+    margin-bottom: 20px;
+    min-width: 156px;
+    font-size: 3.2rem;
+  }
+  .card-main-1__txt span {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .card-main-1 {
+    min-height: 447px;
+  }
+  .card-main-1__img {
+    margin-bottom: 40px;
+  }
+  .card-main-1__img img {
+    width: 180px;
+    height: 180px;
+  }
+  .card-main-1__img span {
+    font-size: 7.5rem;
+  }
+  .card-main-1__txt h3 {
+    margin-bottom: 20px;
+    min-width: 156px;
+    font-size: 3.2rem;
+  }
+  .card-main-1__txt span {
+    font-size: 1.7rem;
+  }
+}
+
+.card-main-2 {
+  width: 100%;
+}
+.card-main-2 img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.card-main-2 .desc h3 {
+  font-size: 2.1rem;
+  margin-bottom: 5px;
+}
+.card-main-2 .desc p {
+  font-size: 1.5rem;
+}
+
+.card-main-4-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-main-4-list .card-main-4 {
+  position: sticky;
+  padding: 40px 30px;
+  width: 100%;
+  border-radius: 10px;
+  background: #1d1d1d;
+}
+.card-main-4-list .card-main-4 img {
+  width: 50px;
+  margin-bottom: 30px;
+}
+.card-main-4-list .card-main-4 h3 {
+  font-size: 2.1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.card-main-4-list .card-main-4 p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.card-main-4-list .card-main-4 .sent-2nd {
+  display: none;
+}
 
 /* 
  * name : Checkbox Css
@@ -3523,7 +3618,7 @@ input[type=checkbox] {
 }
 
 .bg-gray {
-  background-color: #f8f8f8;
+  background-color: #fcfcfc;
 }
 
 #wrap {
@@ -3602,7 +3697,7 @@ input[type=checkbox] {
   left: 0;
   right: 0;
   height: 0;
-  background: #f8f8f8;
+  background: #fcfcfc;
   transition: all 0.3s;
 }
 #header .inner {
@@ -3716,7 +3811,7 @@ input[type=checkbox] {
   right: 0;
   height: 0;
   padding: 0;
-  background: #f8f8f8;
+  background: #fcfcfc;
   transition: all 0.3s;
 }
 #gnb .gnb__depth2::after {
@@ -3846,7 +3941,7 @@ input[type=checkbox] {
 }
 
 .sec-g {
-  overflow: visibel;
+  overflow: hidden;
   padding: 60px 0;
 }
 .sec-g .sec-txt {
@@ -3860,11 +3955,66 @@ input[type=checkbox] {
 .sec-g__tit {
   padding-bottom: 10px;
   font-size: 2.5rem;
+  line-height: 1.2;
   color: #1d1d1d;
 }
 .sec-g__desc {
   font-size: 1.5rem;
   color: #2d2d2d;
+  max-width: 80%;
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .sec-g {
+    padding: 80px 0;
+  }
+  .sec-g .sec-txt {
+    margin-bottom: 120px;
+  }
+  .sec-g__label {
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    color: #555555;
+  }
+  .sec-g__tit {
+    padding-bottom: 20px;
+    font-size: 3.2rem;
+    color: #1d1d1d;
+  }
+  .sec-g__desc {
+    font-size: 1.7rem;
+    color: #2d2d2d;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .sec-g {
+    padding: 120px 0 90px;
+  }
+  .sec-g .sec-txt {
+    margin-bottom: 180px;
+  }
+  .sec-g__label {
+    margin-bottom: 90px;
+    font-size: 1.7rem;
+    color: #555555;
+  }
+  .sec-g__tit {
+    padding-bottom: 30px;
+    font-size: 6rem;
+    color: #1d1d1d;
+  }
+  .sec-g__desc {
+    font-size: 1.9rem;
+    color: #2d2d2d;
+    max-width: 40%;
+  }
+}
+
+.sec-main-portfolio .sec-txt {
+  text-align: center;
+}
+.sec-main-portfolio .sec-txt h2 {
+  font-size: 2.5rem;
 }
 
 :root {
@@ -3947,4 +4097,29 @@ input[type=checkbox] {
 }
 .slide-main-research .swiper-pagination {
   bottom: -50px;
+}
+
+.sec-main-contact {
+  background: #0050ff;
+  flex-direction: column;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+.sec-main-contact .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.sec-main-contact .inner .sec-main-contact__link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sec-main-contact .inner p {
+  font-size: 6.5vw;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.sec-main-contact .inner a {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */

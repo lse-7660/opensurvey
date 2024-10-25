@@ -305,11 +305,11 @@
 
 // section layout
 .sec-g {
+  overflow: hidden;
+  padding: 60px 0;
   .sec-txt {
     margin-bottom: 100px;
   }
-  overflow: visibel;
-  padding: 60px 0;
   &__label {
     margin-bottom: 40px;
     font-size: $font-size-label-xsm;
@@ -318,10 +318,63 @@
   &__tit {
     padding-bottom: 10px;
     font-size: $font-size-title-xlg;
+    line-height: 1.2;
     color: $gray-90;
   }
   &__desc {
     font-size: $font-size-body-sm;
     color: $gray-80;
+    max-width: 80%;
+  }
+  @include tablet {
+    padding: 80px 0;
+    .sec-txt {
+      margin-bottom: 120px;
+    }
+    &__label {
+      margin-bottom: 60px;
+      font-size: $font-size-label-sm;
+      color: $gray-70;
+    }
+    &__tit {
+      padding-bottom: 20px;
+      font-size: $font-size-title-xxlg;
+      color: $gray-90;
+    }
+    &__desc {
+      font-size: $font-size-body-md;
+      color: $gray-80;
+      max-width: 50%;
+    }
+  }
+  @include tabletMore {
+    padding: 120px 0 90px;
+    .sec-txt {
+      margin-bottom: 180px;
+    }
+    &__label {
+      margin-bottom: 90px;
+      font-size: $font-size-label-md;
+      color: $gray-70;
+    }
+    &__tit {
+      padding-bottom: 30px;
+      font-size: $font-size-title-xxxlg;
+      color: $gray-90;
+    }
+    &__desc {
+      font-size: $font-size-body-lg;
+      color: $gray-80;
+      max-width: 40%;
+    }
+  }
+}
+
+.sec-main-portfolio {
+  .sec-txt {
+    text-align: center;
+    h2 {
+      font-size: $font-size-title-xlg;
+    }
   }
 }
