@@ -10,18 +10,6 @@ $("#nav-all .close").click(function () {
   $("#nav-all").removeClass("active");
 });
 
-$("#gnb").mouseenter(function () {
-  $("#header").addClass("active");
-});
-
-$("#gnb").mouseleave(function () {
-  $("#header").removeClass("active");
-});
-
-$(".lang__btn").click(function () {
-  $(".lang__lst").show();
-});
-
-$(".lang__lst li").click(function () {
-  $(".lang__lst").hide();
+$(".gnb__depth1 li").click(function () {
+  $(this).toggleClass("active");
 });

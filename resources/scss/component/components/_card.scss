@@ -62,6 +62,7 @@
   }
   @include tablet {
     min-height: 417px;
+    border-radius: 20px;
     &__img {
       margin-bottom: 40px;
       img {
@@ -85,6 +86,7 @@
   }
   @include tabletMore {
     min-height: 447px;
+    border-radius: 20px;
     &__img {
       margin-bottom: 40px;
       img {
@@ -126,6 +128,22 @@
     }
     p {
       font-size: $font-size-body-sm;
+    }
+    @include tablet {
+      h3 {
+        font-size: $font-size-title-xxlg;
+      }
+      p {
+        font-size: $font-size-body-md;
+      }
+    }
+    @include tabletMore {
+      h3 {
+        font-size: $font-size-title-xxlg;
+      }
+      p {
+        font-size: $font-size-body-md;
+      }
     }
   }
 }

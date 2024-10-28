@@ -6,34 +6,27 @@
 // intro style
 .intro {
   &__title {
-    font-size: 4.5rem;
+    font-size: 13.2vw;
     font-weight: $font-bolder;
   }
   &__content {
     font-size: 1.6rem;
-    font-weight: $font-bold;
+    font-weight: $font-medium;
     line-height: 1.2;
   }
   @include tablet {
-    &__title {
-      font-size: 9rem;
-      font-weight: $font-bolder;
-    }
     &__content {
       font-size: 2.8rem;
-      font-weight: $font-bold;
       text-align: right;
     }
   }
   @include tabletMore {
     &__title {
-      font-size: 14.4rem;
-      font-weight: $font-bolder;
+      font-size: 9.8vw;
     }
     &__content {
       text-align: right;
-      font-size: 4.2rem;
-      font-weight: $font-bold;
+      font-size: 3.2rem;
     }
   }
 }
@@ -70,10 +63,10 @@
 
 .slide-main-research {
   overflow: visible;
-  width: 90%;
+  width: 100%;
   margin-left: 0;
   @include mobileMore {
-    width: 90%;
+    width: 100%;
   }
   @include tabletMore {
     width: 100%;
@@ -139,6 +132,48 @@
 // }
 // 다시 짜자!!!
 
+.sec-main-portfolio {
+  .inner {
+    overflow: visible;
+  }
+  .sec-g__cont {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .portfolio-logo {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+
+      img {
+        width: 100px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+      }
+    }
+    @include tablet {
+      gap: 30px;
+      .portfolio-logo {
+        gap: 30px;
+        img {
+          width: 160px;
+          height: 77px;
+        }
+      }
+    }
+    @include tabletMore {
+      .portfolio-logo {
+        img {
+          width: 270px;
+          height: 130px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
 .sec-main-contact {
   background: $primary;
   flex-direction: column;
@@ -160,6 +195,34 @@
     }
     a {
       font-size: $font-size-body-sm;
+    }
+  }
+  @include tablet {
+    padding: 150px 0 60px 0;
+    .inner {
+      gap: 180px;
+      .sec-main-contact__link {
+        gap: 40px;
+      }
+      a {
+        font-size: $font-size-title-lg;
+      }
+    }
+  }
+  @include tabletMore {
+    padding: 300px 0 120px 0;
+    .inner {
+      gap: 300px;
+      .sec-main-contact__link {
+        flex-direction: row;
+        gap: 100px;
+      }
+      p {
+        font-size: 6vw;
+      }
+      a {
+        font-size: $font-size-title-xxlg;
+      }
     }
   }
 }
