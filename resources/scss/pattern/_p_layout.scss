@@ -361,6 +361,20 @@
   }
 }
 
+.sec-main-feature {
+  .sec-txt {
+    margin-bottom: 60px;
+    @include tabletMore {
+      margin-bottom: 150px;
+    }
+  }
+  .feature-wrap {
+    @include tabletMore {
+      margin-bottom: 100px;
+    }
+  }
+}
+
 .sec-main-portfolio {
   .sec-g__label {
     margin-bottom: 10px;

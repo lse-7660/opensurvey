@@ -54,26 +54,67 @@
     opacity: 0.5;
   }
   .swiper-button-next::before {
-    content: "\f138";
+    content: "\f0a9";
   }
   .swiper-button-prev::before {
-    content: "\f137";
+    content: "\f0a8";
   }
 }
 
 .slide-main-research {
+  position: relative;
   overflow: visible;
   width: 100%;
+  height: 100%;
   margin-left: 0;
+
+  @include mobile {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
   @include mobileMore {
     width: 100%;
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
   }
   @include tabletMore {
     width: 100%;
     margin-left: auto;
+    .swiper-button-next {
+      width: 60px;
+      height: 60px;
+      top: -60px;
+      left: 80px;
+    }
+    .swiper-button-prev {
+      width: 60px;
+      height: 60px;
+      top: -60px;
+      left: 0;
+    }
+    .swiper-button-next::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+
+      background: url(../../images/component/common/arrow-right.png) no-repeat;
+    }
+    .swiper-button-prev::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background: url(../../images/component/common/arrow-left.png) no-repeat;
+    }
   }
-  .swiper-pagination {
-    bottom: -50px;
+}
+
+.sec-main-feature {
+  .sec-g__tit {
+    display: none;
   }
 }
 

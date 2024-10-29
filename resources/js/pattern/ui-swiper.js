@@ -12,17 +12,17 @@ var swiper = new Swiper(".slide-intro", {
 var swiper = new Swiper(".slide-main-research", {
   slidesPerView: 1.2,
   spaceBetween: 20,
-  pagination: {
-    el: ".slide-studio .swiper-pagination",
-    clickable: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     600: {
       slidesPerView: 1.2,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 2.2,
+      slidesPerView: 2.1,
       spaceBetween: 30,
     },
   },
@@ -38,7 +38,7 @@ var swiper = new Swiper(".slide-main-solution", {
   breakpoints: {
     600: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
     1024: {
       slidesPerView: 3,
