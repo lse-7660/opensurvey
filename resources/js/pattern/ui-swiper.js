@@ -37,11 +37,11 @@ var swiper = new Swiper(".slide-main-solution", {
   },
   breakpoints: {
     600: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 3.2,
       spaceBetween: 30,
     },
   },

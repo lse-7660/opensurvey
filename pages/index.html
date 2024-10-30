@@ -17,8 +17,16 @@
     <link rel="shortcut icon" href="../resources/images/component/common/favicon.ico" />
     <!-- css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
     <link rel="stylesheet" href="../resources/css/pattern_css.css" />
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -52,54 +60,106 @@
         </div>
         <!-- active 추가시 활성화 -->
         <nav id="nav-all" class="">
-          <ul class="gnb__depth1">
-            <li>
-              <a href="#">
-                <span>리서치</span>
-              </a>
-              <ul class="gnb__depth2">
-                <li><a href="#">데이터 수집과 타겟팅</a></li>
-                <li><a href="#">신뢰할 수 있는 패널</a></li>
-                <li><a href="#">분석과 시각화</a></li>
-                <li><a href="#">협업과 연동, 자동화</a></li>
-                <li><a href="#">데이터 자산 보안</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">
-                <span>경험관리</span>
-              </a>
-            </li>
-            <li>
-              <a href="#"><span>솔루션</span></a>
-              <ul class="gnb__depth2">
-                <li><a href="#">시장/트렌드 파악</a></li>
-                <li><a href="#">브랜드/광고 조사</a></li>
-                <li><a href="#">제품 평가 조사</a></li>
-                <li><a href="#">미션형 조사</a></li>
-                <li><a href="#">디지털 특화 조사</a></li>
-                <li><a href="#">해외 리서치</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#"><span>데이터</span></a>
-            </li>
-            <li>
-              <a href="#"><span>dataspace</span></a>
-            </li>
-            <li>
-              <a href="#"><span>리소스</span></a>
-              <ul class="gnb__depth2">
-                <li><a href="#">블로그</a></li>
-                <li><a href="#">헬프센터</a></li>
-                <li><a href="#">프로덕트 업데이트</a></li>
-                <li><a href="#">개발자 센터</a></li>
-                <li><a href="#">커리어</a></li>
-                <li><a href="#">뉴스룸</a></li>
-                <li><a href="#">공지사항</a></li>
-              </ul>
-            </li>
-          </ul>
+          <div class="nav-all__mobile">
+            <ul class="gnb__depth1">
+              <li>
+                <a href="#">
+                  <span>리서치</span>
+                </a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">데이터 수집과 타겟팅</a></li>
+                  <li><a href="#">신뢰할 수 있는 패널</a></li>
+                  <li><a href="#">분석과 시각화</a></li>
+                  <li><a href="#">협업과 연동, 자동화</a></li>
+                  <li><a href="#">데이터 자산 보안</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>경험관리</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><span>솔루션</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">시장/트렌드 파악</a></li>
+                  <li><a href="#">브랜드/광고 조사</a></li>
+                  <li><a href="#">제품 평가 조사</a></li>
+                  <li><a href="#">미션형 조사</a></li>
+                  <li><a href="#">디지털 특화 조사</a></li>
+                  <li><a href="#">해외 리서치</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>데이터</span></a>
+              </li>
+              <li>
+                <a href="#"><span>dataspace</span></a>
+              </li>
+              <li>
+                <a href="#"><span>리소스</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">블로그</a></li>
+                  <li><a href="#">헬프센터</a></li>
+                  <li><a href="#">프로덕트 업데이트</a></li>
+                  <li><a href="#">개발자 센터</a></li>
+                  <li><a href="#">커리어</a></li>
+                  <li><a href="#">뉴스룸</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-all__pc">
+            <ul class="gnb__depth1">
+              <li>
+                <a href="#">
+                  <span>리서치</span>
+                </a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">데이터 수집과 타겟팅</a></li>
+                  <li><a href="#">신뢰할 수 있는 패널</a></li>
+                  <li><a href="#">분석과 시각화</a></li>
+                  <li><a href="#">협업과 연동, 자동화</a></li>
+                  <li><a href="#">데이터 자산 보안</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>경험관리</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><span>솔루션</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">시장/트렌드 파악</a></li>
+                  <li><a href="#">브랜드/광고 조사</a></li>
+                  <li><a href="#">제품 평가 조사</a></li>
+                  <li><a href="#">미션형 조사</a></li>
+                  <li><a href="#">디지털 특화 조사</a></li>
+                  <li><a href="#">해외 리서치</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>데이터</span></a>
+              </li>
+              <li>
+                <a href="#"><span>dataspace</span></a>
+              </li>
+              <li>
+                <a href="#"><span>리소스</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">블로그</a></li>
+                  <li><a href="#">헬프센터</a></li>
+                  <li><a href="#">프로덕트 업데이트</a></li>
+                  <li><a href="#">개발자 센터</a></li>
+                  <li><a href="#">커리어</a></li>
+                  <li><a href="#">뉴스룸</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
           <div class="nav-all__util">
             <a class="btn-login" href="#">로그인</a>
             <button class="close">
@@ -122,7 +182,9 @@
             <div class="sec-txt">
               <p class="sec-g__label">RESEARCH</p>
               <h2 class="sec-g__tit">더 자주 듣고<br /><em>더 빠르게 액션으로</em> 옮기세요</h2>
-              <p class="sec-g__desc">소비자 데이터 전문가가 검증한 플랫폼에서 리서치와 경험관리 데이터를 쉽고 빠르게 수집하고 분석하세요.</p>
+              <p class="sec-g__desc">
+                소비자 데이터 전문가가 검증한 플랫폼에서 리서치와 경험관리 데이터를 쉽고 빠르게 수집하고 분석하세요.
+              </p>
             </div>
             <div class="sec-g__cont">
               <div class="swiper slide-main-research">
@@ -135,7 +197,10 @@
                       </div>
                       <div class="card-main-1__txt">
                         <h3>데이터 수집과<br />타겟팅</h3>
-                        <p>브랜드 아이덴티티를 반영한 설문을 만들고, 원하는 조건의 응답자와 가까운 채널로 데이터를 수집할 수 있습니다.</p>
+                        <p>
+                          브랜드 아이덴티티를 반영한 설문을 만들고, 원하는 조건의 응답자와 가까운 채널로 데이터를 수집할
+                          수 있습니다.
+                        </p>
                       </div>
                     </a>
                   </div>
@@ -147,7 +212,10 @@
                       </div>
                       <div class="card-main-1__txt">
                         <h3>신뢰할 수 있는<br />패널</h3>
-                        <p>모바일 패널을 보유한 데이터 수집 앱에서 설문 및 미션, 온ꞏ오프라인 인터뷰를 통해 다양한 데이터를 수집할 수 있습니다.</p>
+                        <p>
+                          모바일 패널을 보유한 데이터 수집 앱에서 설문 및 미션, 온ꞏ오프라인 인터뷰를 통해 다양한
+                          데이터를 수집할 수 있습니다.
+                        </p>
                       </div>
                     </a>
                   </div>
@@ -159,7 +227,10 @@
                       </div>
                       <div class="card-main-1__txt">
                         <h3>분석과<br />시각화</h3>
-                        <p>데이터를 실시간으로 시각화합니다. 전문가 수준의 분석을 쉽게 진행하고 AI가 작성한 보고서를 다운로드할 수 있습니다.</p>
+                        <p>
+                          데이터를 실시간으로 시각화합니다. 전문가 수준의 분석을 쉽게 진행하고 AI가 작성한 보고서를
+                          다운로드할 수 있습니다.
+                        </p>
                       </div>
                     </a>
                   </div>
@@ -183,7 +254,10 @@
                       </div>
                       <div class="card-main-1__txt">
                         <h3>데이터 자산<br />보안</h3>
-                        <p>오픈서베이의 모든 프로덕트는 엔터프라이즈 등급 보안을 적용해 안전하게 관리하며 개인정보 보호법을 준수하도록 설계되어 있습니다.</p>
+                        <p>
+                          오픈서베이의 모든 프로덕트는 엔터프라이즈 등급 보안을 적용해 안전하게 관리하며 개인정보
+                          보호법을 준수하도록 설계되어 있습니다.
+                        </p>
                       </div>
                     </a>
                   </div>
@@ -214,7 +288,10 @@
                       <img src="../resources/images/content/feature-1.png" alt="" />
                       <div class="desc">
                         <h3>리서치는 전략적 의사결정의 시작입니다</h3>
-                        <p>오픈서베이가 자체 구축한 모바일 패널과 리서치 프로덕트로 의사결정에 필요한 데이터를 빠르게 확보하세요.</p>
+                        <p>
+                          오픈서베이가 자체 구축한 모바일 패널과 리서치 프로덕트로 의사결정에 필요한 데이터를 빠르게
+                          확보하세요.
+                        </p>
                       </div>
                     </div>
                   </a>
@@ -242,7 +319,10 @@
                       <img src="../resources/images/content/feature-3.webp" alt="" />
                       <div class="desc">
                         <h3>응답 수집 앱에 대한 만족도가 데이터 퀄리티로 이어집니다</h3>
-                        <p>오픈서베이는 자체 개발한 데이터 수집 앱 오베이를 높은 수준의 원칙으로 운영하고 있으며 퀄리티 높은 데이터 수집을 위한 응답자 경험을 계속해서 고민합니다.</p>
+                        <p>
+                          오픈서베이는 자체 개발한 데이터 수집 앱 오베이를 높은 수준의 원칙으로 운영하고 있으며 퀄리티
+                          높은 데이터 수집을 위한 응답자 경험을 계속해서 고민합니다.
+                        </p>
                       </div>
                     </div>
                   </a>
@@ -271,25 +351,26 @@
             <div class="sec-txt">
               <p class="sec-g__label">SOLUTION</p>
               <h2 class="sec-g__tit">리서치 <em>솔루션</em></h2>
-              <p class="sec-g__desc">소비자 데이터 전문가가 검증한 플랫폼에서 리서치와 경험관리 데이터를 쉽고 빠르게 수집하고 분석하세요.</p>
+              <p class="sec-g__desc">
+                소비자 데이터 전문가가 검증한 플랫폼에서 리서치와 경험관리 데이터를 쉽고 빠르게 수집하고 분석하세요.
+              </p>
             </div>
             <div class="sec-g__cont">
               <div class="swiper slide-main-solution">
                 <div class="swiper-wrapper">
-                  <!-- swiper-slide-active scss 별도 작성 -->
                   <div class="swiper-slide">
-                    <div class="card-main-3__img">
-                      <img src="../resources/images/content/solution-markettrend.jpg" alt="" />
+                    <div class="card card-main-3">
+                      <div class="card-main-3__img">
+                        <img src="../resources/images/content/solution-markettrend.jpg" alt="" />
+                      </div>
+                      <div class="card-main-3__txt">
+                        <h3>시장/트렌드 파악</h3>
+                        <p>
+                          소비자의 행동과 생각을 직접 들어보고, 우리가 속한 시장이 어떻게 구성되어있는지 살펴볼 수
+                          있습니다.
+                        </p>
+                      </div>
                     </div>
-                    <h3>시장/트렌드 파악</h3>
-                    <p>소비자의 행동과 생각을 직접 들어보고, 우리가 속한 시장이 어떻게 구성되어있는지 살펴볼 수 있습니다.</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card-main-3__img">
-                      <img src="../resources/images/content/solution-markettrend.jpg" alt="" />
-                    </div>
-                    <h3>시장/트렌드 파악</h3>
-                    <p>소비자의 행동과 생각을 직접 들어보고, 우리가 속한 시장이 어떻게 구성되어있는지 살펴볼 수 있습니다.</p>
                   </div>
                 </div>
               </div>
@@ -308,42 +389,66 @@
                   <img class="card-main-4__img" src="../resources/images/pattern/common/process-1.png" alt="" />
                   <h3>조사 문의</h3>
                   <p class="sent-1st">해결하고 싶은 비즈니스 고민 문의</p>
-                  <p class="sent-2nd">해결하고 싶은 비즈니스 고민 문의 <br />이미 설문지가 준비되어 있다면, 직접 설문을 만들어 진행하는 DIY 서비스를 이용</p>
+                  <p class="sent-2nd">
+                    해결하고 싶은 비즈니스 고민 문의 <br />이미 설문지가 준비되어 있다면, 직접 설문을 만들어 진행하는
+                    DIY 서비스를 이용
+                  </p>
                 </li>
                 <li class="card card-main-4">
                   <img class="card-main-4__img" src="../resources/images/pattern/common/process-2.png" alt="" />
                   <h3>조사 개요 확인</h3>
                   <p class="sent-1st">조사 목적, 응답자 조건, 알고자 하는 내용 등 조사 진행을 위해 필요한 사항 확인</p>
-                  <p class="sent-2nd">조사 목적, 응답자 조건, 알고자 하는 내용 등 조사 진행을 위해 필요한 사항 확인 <br />오픈서베이 표준 리서치 서비스를 가이드할 Account Manager 배정</p>
+                  <p class="sent-2nd">
+                    조사 목적, 응답자 조건, 알고자 하는 내용 등 조사 진행을 위해 필요한 사항 확인 <br />오픈서베이 표준
+                    리서치 서비스를 가이드할 Account Manager 배정
+                  </p>
                 </li>
                 <li class="card card-main-4">
                   <img class="card-main-4__img" src="../resources/images/pattern/common/process-3.png" alt="" />
                   <h3>견적 안내</h3>
                   <p class="sent-1st">파일럿 테스트 결과 및 조사 난이도를 기반으로 정확한 견적 안내</p>
-                  <p class="sent-2nd">파일럿 테스트 결과 및 조사 난이도를 기반으로 정확한 견적 안내 <br />고객사의 예산 범위 내에서 무리 없이 조사를 진행할 수 있도록 모듈화된 가격 체계를 바탕으로 담당자와 최종 견적 협의</p>
+                  <p class="sent-2nd">
+                    파일럿 테스트 결과 및 조사 난이도를 기반으로 정확한 견적 안내 <br />고객사의 예산 범위 내에서 무리
+                    없이 조사를 진행할 수 있도록 모듈화된 가격 체계를 바탕으로 담당자와 최종 견적 협의
+                  </p>
                 </li>
                 <li class="card card-main-4">
                   <img class="card-main-4__img" src="../resources/images/pattern/common/process-4.png" alt="" />
                   <h3>조사 확정</h3>
                   <p class="sent-1st">선불 결제 또는 계약서 날인 후 조사 확정</p>
+                  <p class="sent-2nd">선불 결제 또는 계약서 날인 후 조사 확정</p>
                 </li>
                 <li class="card card-main-4">
                   <img class="card-main-4__img" src="../resources/images/pattern/common/process-5.png" alt="" />
                   <h3>조사 설계</h3>
                   <p class="sent-1st">오픈서베이 팀에서 비즈니스 고민을 해결할 수 있는 최적의 설문을 설계</p>
-                  <p class="sent-2nd">오픈서베이 팀에서 비즈니스 고민을 해결할 수 있는 최적의 설문을 설계 <br />이후 고객의 요청에 따라 문항을 유연하게 수정할 수 있으며, 논의를 거쳐 최종적으로 확정</p>
+                  <p class="sent-2nd">
+                    오픈서베이 팀에서 비즈니스 고민을 해결할 수 있는 최적의 설문을 설계 <br />이후 고객의 요청에 따라
+                    문항을 유연하게 수정할 수 있으며, 논의를 거쳐 최종적으로 확정
+                  </p>
                 </li>
                 <li class="card card-main-4">
                   <img class="card-main-4__img" src="../resources/images/pattern/common/process-6.png" alt="" />
                   <h3>응답 수집</h3>
                   <p class="sent-1st">오픈서베이 패널과 설문조사 앱을 통해 데이터 수집</p>
-                  <p class="sent-2nd">오픈 서베이 패널 중 사전에 요청하신 조건에 해당하는 응답 대상자를 추출 <br />오픈서베이 설문조사 앱 ‘오베이’를 통해 응답 데이터를 빠르게 수집</p>
+                  <p class="sent-2nd">
+                    오픈 서베이 패널 중 사전에 요청하신 조건에 해당하는 응답 대상자를 추출 <br />오픈서베이 설문조사 앱
+                    ‘오베이’를 통해 응답 데이터를 빠르게 수집
+                  </p>
                 </li>
                 <li class="card card-main-4 card-main-4-7">
                   <img class="card-main-4__img" src="../resources/images/pattern/common/process-7.png" alt="" />
                   <h3>결과 전달</h3>
-                  <p class="sent-1st">데이터 클리닝을 거쳐 사전에 합의한 수만큼의 응답 데이터가 수집되면 최종 결과를 전달</p>
-                  <p class="sent-2nd">데이터 클리닝을 거쳐 사전에 합의한 수만큼의 응답 데이터가 수집되면 최종 결과를 전달 <br /><span>*데이터클리닝: 무의미하거나 무성의한 응답을 클리닝하여 데이터의 신뢰를 높입니다. 클리닝한 데이터만큼 다시 응답을 수집하여 목표 응답자 수를 채웁니다. 클리닝한 응답은 그 이유를 기록한 후 숨김 처리되며, 결과 분석에는 포함되지 않습니다.</span></p>
+                  <p class="sent-1st">
+                    데이터 클리닝을 거쳐 사전에 합의한 수만큼의 응답 데이터가 수집되면 최종 결과를 전달
+                  </p>
+                  <p class="sent-2nd">
+                    데이터 클리닝을 거쳐 사전에 합의한 수만큼의 응답 데이터가 수집되면 최종 결과를 전달 <br /><span
+                      >*데이터클리닝: 무의미하거나 무성의한 응답을 클리닝하여 데이터의 신뢰를 높입니다. 클리닝한
+                      데이터만큼 다시 응답을 수집하여 목표 응답자 수를 채웁니다. 클리닝한 응답은 그 이유를 기록한 후
+                      숨김 처리되며, 결과 분석에는 포함되지 않습니다.</span
+                    >
+                  </p>
                 </li>
               </ul>
             </div>
@@ -369,7 +474,10 @@
               </div>
               <div class="portfolio-logo row2">
                 <img src="../resources/images/pattern/portfolio-logo/portfolio_logo (9).png" alt="하나투어" />
-                <img src="../resources/images/pattern/portfolio-logo/portfolio_logo (10).png" alt="한화 호텔 & 리조트" />
+                <img
+                  src="../resources/images/pattern/portfolio-logo/portfolio_logo (10).png"
+                  alt="한화 호텔 & 리조트"
+                />
                 <img src="../resources/images/pattern/portfolio-logo/portfolio_logo (11).png" alt="현대 오토에버" />
                 <img src="../resources/images/pattern/portfolio-logo/portfolio_logo (12).png" alt="카카오" />
                 <img src="../resources/images/pattern/portfolio-logo/portfolio_logo (13).png" alt="카카오뱅크" />

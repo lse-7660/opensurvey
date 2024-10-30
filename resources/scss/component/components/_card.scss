@@ -236,51 +236,100 @@
   }
 }
 
-.card-main-4-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  .card-main-4 {
-    position: sticky;
-    padding: 40px 30px;
+// card3-js 배우고!!
+.card-main-3 {
+  position: relative;
+  background: $primary;
+  &__img {
     width: 100%;
-    border-radius: 10px;
-    background: $gray-90;
-
+    height: 100%;
     img {
-      width: 50px;
-      margin-bottom: 30px;
-      border-radius: 0;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
     }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__txt {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     h3 {
       color: $white;
-      margin-bottom: 20px;
+      text-align: center;
     }
     p {
-      color: $white;
-    }
-    .sent-2nd {
       display: none;
-      span {
-        font-size: $font-size-body-sm;
-        font-weight: 200;
-        color: $gray-30;
-      }
     }
-    @include tablet {
-      .sent-1st {
-        display: none;
+  }
+}
+
+.sec-main-process {
+  .card-main-4-list {
+    .card-main-4 {
+      position: sticky;
+      top: 100px;
+      margin-bottom: 20px;
+      padding: 40px 30px;
+      width: 100%;
+      background: $gray-90;
+
+      img {
+        width: 50px;
+        margin-bottom: 30px;
+        border-radius: 0;
+      }
+      h3 {
+        color: $white;
+        margin-bottom: 20px;
+      }
+      p {
+        color: $gray-5;
       }
       .sent-2nd {
-        display: block;
-      }
-    }
-    @include tabletMore {
-      .sent-1st {
         display: none;
+        span {
+          font-size: $font-size-body-sm;
+          font-weight: 200;
+          color: $gray-30;
+        }
       }
-      .sent-2nd {
-        display: block;
+      @include tablet {
+        .sent-1st {
+          display: none;
+        }
+        .sent-2nd {
+          display: block;
+        }
+      }
+      @include tabletMore {
+        position: relative;
+        min-height: 240px;
+        h3 {
+          position: absolute;
+          top: 40px;
+          left: 6vw;
+        }
+        img {
+          margin: 0 0 30px 40%;
+          width: 60px;
+        }
+        .sent-1st {
+          display: none;
+        }
+        .sent-2nd {
+          display: block;
+          margin-left: 40%;
+        }
       }
     }
   }
