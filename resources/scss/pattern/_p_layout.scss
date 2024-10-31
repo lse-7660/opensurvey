@@ -346,7 +346,7 @@
   .inner {
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    // gap: 10vh;
 
     @include tablet {
       gap: 20vh;
@@ -360,7 +360,7 @@
 
 // section layout
 .sec-g {
-  overflow: hidden;
+  // overflow: hidden;
   padding: 60px 0;
   .sec-txt {
     margin-bottom: 100px;

@@ -275,22 +275,23 @@
 
 .sec-main-process {
   .card-main-4-list {
+    height: auto;
     .card-main-4 {
-      position: sticky;
-      top: 100px;
+      // position: sticky;
+      // top: 100px;
       margin-bottom: 20px;
-      padding: 40px 30px;
+      padding: 40px 40px;
       width: 100%;
       background: $gray-90;
-
+      border: 1px solid $gray-70;
       img {
         width: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         border-radius: 0;
       }
       h3 {
         color: $white;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
       p {
         color: $gray-5;
@@ -312,7 +313,6 @@
         }
       }
       @include tabletMore {
-        position: relative;
         min-height: 240px;
         h3 {
           position: absolute;

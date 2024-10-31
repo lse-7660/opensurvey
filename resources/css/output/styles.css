@@ -392,7 +392,6 @@ html {
 
 body {
   font-size: 1.7rem;
-  overflow-x: hidden;
 }
 
 *:focus {
@@ -2604,22 +2603,24 @@ caption {
   display: none;
 }
 
+.sec-main-process .card-main-4-list {
+  height: auto;
+}
 .sec-main-process .card-main-4-list .card-main-4 {
-  position: sticky;
-  top: 100px;
   margin-bottom: 20px;
-  padding: 40px 30px;
+  padding: 40px 40px;
   width: 100%;
   background: #1d1d1d;
+  border: 1px solid #555555;
 }
 .sec-main-process .card-main-4-list .card-main-4 img {
   width: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: 0;
 }
 .sec-main-process .card-main-4-list .card-main-4 h3 {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .sec-main-process .card-main-4-list .card-main-4 p {
   color: #fcfcfc;
@@ -2642,7 +2643,6 @@ caption {
 }
 @media (min-width: 1024px) {
   .sec-main-process .card-main-4-list .card-main-4 {
-    position: relative;
     min-height: 240px;
   }
   .sec-main-process .card-main-4-list .card-main-4 h3 {
@@ -4122,7 +4122,6 @@ input[type=checkbox] {
 .intro .inner {
   display: flex;
   flex-direction: column;
-  gap: 10vh;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
   .intro .inner {
@@ -4137,7 +4136,6 @@ input[type=checkbox] {
 }
 
 .sec-g {
-  overflow: hidden;
   padding: 60px 0;
 }
 .sec-g .sec-txt {
@@ -4267,7 +4265,8 @@ input[type=checkbox] {
 }
 
 .intro__title {
-  font-size: 13.2vw;
+  font-size: 13vw;
+  line-height: 13vw;
   font-weight: 800;
 }
 .intro__content {
@@ -4283,12 +4282,40 @@ input[type=checkbox] {
 }
 @media (min-width: 1024px) {
   .intro__title {
-    font-size: 9.8vw;
+    font-size: 10vw;
+    line-height: 10vw;
   }
   .intro__content {
     text-align: right;
     font-size: 3.2rem;
   }
+}
+
+.intro-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #0050ff;
+}
+.intro-animation .intro__title-box {
+  width: 100%;
+  height: 13vw;
+  overflow: hidden;
+}
+.intro-animation .intro__title-box .txt-fill {
+  color: #fff;
+}
+.intro-animation .intro__title-box .txt-stroke {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+.intro-animation .bg-fill {
+  overflow: hidden;
+  background: #fff;
+  width: 0;
+  height: 0;
 }
 
 .sec-g .sec-txt em {

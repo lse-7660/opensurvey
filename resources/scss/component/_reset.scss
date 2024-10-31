@@ -17,7 +17,7 @@ html {
 }
 body {
   font-size: $font-size-base; // 1.7rem = 17px
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 *:focus {
   @include focus();
