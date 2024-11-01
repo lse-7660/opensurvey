@@ -11,6 +11,7 @@
     font-weight: $font-bolder;
   }
   &__content {
+    display: none;
     font-size: 1.6rem;
     font-weight: $font-medium;
     line-height: 1.2;
@@ -41,10 +42,18 @@
   right: 0;
   z-index: 1000;
   background: $primary;
+  .inner {
+    position: relative;
+    gap: 0;
+  }
   .intro__title-box {
     width: 100%;
     height: 13vw;
     overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
     .txt-fill {
       color: $white;
     }
@@ -52,12 +61,25 @@
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 1px $white;
     }
+    @include tabletMore {
+      height: 10vw;
+    }
   }
   .bg-fill {
     overflow: hidden;
+    width: 100%;
+    height: 100vh;
     background: $white;
-    width: 0;
-    height: 0;
+    --clip: 0;
+    clip-path: circle(var(--clip));
+
+    .txt-fill2 {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translate(0, -50%);
+      color: $primary;
+    }
   }
 }
 
@@ -208,40 +230,151 @@
     overflow: visible;
   }
   .sec-g__cont {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-
-    .portfolio-logo {
-      display: flex;
-      flex-direction: row;
-      gap: 15px;
-
-      img {
-        width: 100px;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
-      }
-    }
-    @include tablet {
-      gap: 30px;
+    .portfolio-logo__mo {
       .portfolio-logo {
-        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding: 12px 0;
+
         img {
-          width: 160px;
-          height: 77px;
+          width: 100px;
+          border-radius: 10px;
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
         }
       }
+      @include tablet {
+        .portfolio-logo {
+          padding: 15px 0;
+          gap: 30px;
+          img {
+            width: 160px;
+            height: 77px;
+          }
+        }
+      }
+      @include tabletMore {
+        display: none;
+      }
     }
-    @include tabletMore {
+
+    .portfolio-logo__pc {
+      display: none;
       .portfolio-logo {
+        display: none;
+        flex-direction: row;
+        gap: 30px;
+        padding: 15px 0;
+
         img {
+          width: 100px;
+          border-radius: 10px;
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
           width: 270px;
           height: 130px;
           border-radius: 20px;
         }
+
+        @include tabletMore {
+          display: flex;
+        }
+      }
+      @include tabletMore {
+        display: block;
       }
     }
+  }
+}
+
+// rolling-left
+.box-rolling-left {
+  position: relative;
+  width: 920px;
+  @include tablet {
+    width: 1520px;
+  }
+  @include tabletMore {
+    width: 3600px;
+  }
+  .rolling-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rolling-left 30s linear infinite;
+    @include tabletMore {
+      animation: rolling-left 40s linear infinite;
+    }
+  }
+  .rolling-left-secondary {
+    position: absolute;
+    animation: rolling-left-secondary 30s linear infinite;
+    @include tabletMore {
+      animation: rolling-left-secondary 40s linear infinite;
+    }
+  }
+}
+
+@keyframes rolling-left {
+  0% {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes rolling-left-secondary {
+  0% {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+// rolling-right
+.box-rolling-right {
+  position: relative;
+  width: 920px;
+  @include tablet {
+    width: 1520px;
+  }
+  @include tabletMore {
+    width: 3900px;
+  }
+  .rolling-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rolling-right 30s linear infinite;
+    @include tabletMore {
+      animation: rolling-right 40s linear infinite;
+    }
+  }
+  .rolling-right-secondary {
+    position: absolute;
+    animation: rolling-right-secondary 30s linear infinite;
+    @include tabletMore {
+      animation: rolling-right-secondary 40s linear infinite;
+    }
+  }
+}
+
+@keyframes rolling-right {
+  0% {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes rolling-right-secondary {
+  0% {
+    left: 0;
+  }
+  to {
+    left: 100%;
   }
 }
 

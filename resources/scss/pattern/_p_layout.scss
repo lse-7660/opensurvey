@@ -349,10 +349,10 @@
     // gap: 10vh;
 
     @include tablet {
-      gap: 20vh;
+      // gap: 20vh;
     }
     @include tabletMore {
-      gap: 30vh;
+      // gap: 30vh;
       padding-top: 10vh;
     }
   }
@@ -454,6 +454,19 @@
   }
   .sec-txt {
     text-align: center;
+  }
+}
+
+.container-portfolio-logo {
+  height: 46.66px;
+  margin: 12px 0;
+  @include tablet {
+    height: 77px;
+    margin: 20px;
+  }
+  @include tabletMore {
+    height: 130px;
+    margin: 30px;
   }
 }
 
