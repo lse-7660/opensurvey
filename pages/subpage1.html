@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오픈서베이</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" href="../resources/images/component/common/favicon.ico" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="../resources/css/pattern_css.css" />
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- my js -->
+    <script defer src="../resources/js/pattern/ui-swiper.js"></script>
+    <script defer src="../resources/js/pattern/ui-pattern-script.js"></script>
+    <script defer src="../resources/js/include.js"></script>
+    <script defer src="../resources/js/pattern/gsap.js"></script>
+  </head>
+  <body>
+    <div id="skip-nav">
+      <a href="#gnb">메뉴 바로가기</a>
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+      <!-- active 추가시 depth2 활성화 -->
+      <header id="header">
+        <div class="inner">
+          <h1 id="logo">
+            <a href="#">
+              <span>오픈서베이</span>
+            </a>
+          </h1>
+          <div class="util">
+            <button class="contact-us">
+              <span class="sr-only">문의하기</span>
+            </button>
+            <button class="all-menu">
+              <span class="sr-only">전체메뉴</span>
+            </button>
+          </div>
+        </div>
+        <!-- active 추가시 활성화 -->
+        <nav id="nav-all" class="">
+          <div class="nav-all__mobile">
+            <ul class="gnb__depth1">
+              <li>
+                <a href="#">
+                  <span>리서치</span>
+                </a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">데이터 수집과 타겟팅</a></li>
+                  <li><a href="#">신뢰할 수 있는 패널</a></li>
+                  <li><a href="#">분석과 시각화</a></li>
+                  <li><a href="#">협업과 연동, 자동화</a></li>
+                  <li><a href="#">데이터 자산 보안</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>경험관리</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><span>솔루션</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">시장/트렌드 파악</a></li>
+                  <li><a href="#">브랜드/광고 조사</a></li>
+                  <li><a href="#">제품 평가 조사</a></li>
+                  <li><a href="#">미션형 조사</a></li>
+                  <li><a href="#">디지털 특화 조사</a></li>
+                  <li><a href="#">해외 리서치</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>데이터</span></a>
+              </li>
+              <li>
+                <a href="#"><span>dataspace</span></a>
+              </li>
+              <li>
+                <a href="#"><span>리소스</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">블로그</a></li>
+                  <li><a href="#">헬프센터</a></li>
+                  <li><a href="#">프로덕트 업데이트</a></li>
+                  <li><a href="#">개발자 센터</a></li>
+                  <li><a href="#">커리어</a></li>
+                  <li><a href="#">뉴스룸</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-all__pc">
+            <ul class="gnb__depth1">
+              <li>
+                <a href="#">
+                  <span>리서치</span>
+                </a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">데이터 수집과 타겟팅</a></li>
+                  <li><a href="#">신뢰할 수 있는 패널</a></li>
+                  <li><a href="#">분석과 시각화</a></li>
+                  <li><a href="#">협업과 연동, 자동화</a></li>
+                  <li><a href="#">데이터 자산 보안</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>경험관리</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><span>솔루션</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">시장/트렌드 파악</a></li>
+                  <li><a href="#">브랜드/광고 조사</a></li>
+                  <li><a href="#">제품 평가 조사</a></li>
+                  <li><a href="#">미션형 조사</a></li>
+                  <li><a href="#">디지털 특화 조사</a></li>
+                  <li><a href="#">해외 리서치</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>데이터</span></a>
+              </li>
+              <li>
+                <a href="#"><span>dataspace</span></a>
+              </li>
+              <li>
+                <a href="#"><span>리소스</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">블로그</a></li>
+                  <li><a href="#">헬프센터</a></li>
+                  <li><a href="#">프로덕트 업데이트</a></li>
+                  <li><a href="#">개발자 센터</a></li>
+                  <li><a href="#">커리어</a></li>
+                  <li><a href="#">뉴스룸</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-all__util">
+            <a class="btn-login" href="#">로그인</a>
+            <button class="close">
+              <span class="sr-only">전체메뉴 닫기</span>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <div class="intro-sub subpage-1">
+        <div class="inner">
+          <p class="intro-sub__label">데이터 수집과 타겟팅</p>
+          <h2 class="intro-sub__tit">빠른 피드백 수집부터</h2>
+          <h2 class="intro-sub__tit">복잡한 리서치까지</h2>
+          <p class="intro-sub__desc">
+            소비자 데이터를 수집하고 운영해 온 오픈 서베이의 노하우를 담았습니다 쉬우면서도 정교한 데이터 수집과
+            타겟팅을 경험해 보세요
+          </p>
+        </div>
+      </div>
+      <main id="container">
+        <section class="seg-g sec-sub-number">
+          <div class="inner">
+            <h2 class="seg-g__tit">지금 이 순간도 설문이 만들어지고 응답이 쌓이고 있습니다</h2>
+
+            <div class="number-wrap">
+              <div class="number-list">
+                <h3 class="number-list__title">한 달 동안 진행되는 설문 수</h3>
+                <p class="sec-g__detail">23년 8월 기준</p>
+                <p class="seg-g__display">1,677</p>
+              </div>
+              <div class="number-list">
+                <h3 class="number-list__title">한 달 동안 수집한 응답 수</h3>
+                <p class="sec-g__detail">23년 8월 기준</p>
+                <p class="seg-g__display">1,450,901</p>
+              </div>
+              <div class="number-list">
+                <h3 class="number-list__title">설문 당 최대 응답 수</h3>
+                <p class="seg-g__display">75,506</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer" include-html="./layout/footer.html"></footer>
+    </div>
+  </body>
+</html>
