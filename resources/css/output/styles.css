@@ -4556,7 +4556,7 @@ input[type=checkbox] {
 }
 @media (min-width: 1024px) {
   .box-rolling-right {
-    width: 3900px;
+    width: 3600px;
   }
 }
 .box-rolling-right .rolling-right {
