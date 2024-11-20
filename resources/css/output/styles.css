@@ -2607,6 +2607,8 @@ caption {
   height: auto;
 }
 .sec-main-process .card-main-4-list .card-main-4 {
+  position: sticky;
+  top: 100px;
   margin-bottom: 20px;
   padding: 40px 40px;
   width: 100%;
@@ -3795,10 +3797,6 @@ input[type=checkbox] {
   background-color: #fcfcfc;
 }
 
-#wrap {
-  overflow: hidden;
-}
-
 .inner {
   position: relative;
   width: 100%;
@@ -3810,6 +3808,10 @@ input[type=checkbox] {
   .inner {
     padding: 0 30px;
   }
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 #skip-nav {
@@ -4118,10 +4120,12 @@ input[type=checkbox] {
 .intro {
   display: flex;
   align-items: center;
+  width: 100vw;
   height: 100vh;
 }
 .intro .inner {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
 }
 @media (min-width: 1024px) {

@@ -4,7 +4,7 @@
 }
 
 #wrap {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 // grid layout
@@ -17,6 +17,10 @@
   @include tablet {
     padding: 0 $p-tablet;
   }
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 #skip-nav {
@@ -342,9 +346,12 @@
 .intro {
   display: flex;
   align-items: center;
+  width: 100vw;
   height: 100vh;
   .inner {
     display: flex;
+    overflow: hidden;
+
     flex-direction: column;
     // gap: 10vh;
 
@@ -360,7 +367,6 @@
 
 // section layout
 .sec-g {
-  // overflow: hidden;
   padding: 60px 0;
   .sec-txt {
     margin-bottom: 100px;
