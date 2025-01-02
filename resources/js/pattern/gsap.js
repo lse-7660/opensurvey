@@ -45,10 +45,32 @@ function shrinkCardsOnScroll() {
         start: "top 10%",
         end: "top 0%",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
   });
 }
 
 shrinkCardsOnScroll();
+
+function genSectionOnScroll(selector) {
+  const elements = document.querySelectorAll(selector);
+  elements.forEach((element) => {
+    gsap.from(element, {
+      opacity: 0,
+      y: "20px",
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: element,
+        start: "top center",
+        // end: "+=500",
+        markers: true,
+      },
+    });
+  });
+}
+
+genSectionOnScroll(".sec-g__label");
+genSectionOnScroll(".sec-g__tit");
+genSectionOnScroll(".sec-g__desc");
+genSectionOnScroll(".sec-g__cont");
