@@ -277,7 +277,7 @@
     height: auto;
     .card-main-4 {
       position: sticky;
-      top: 100px;
+      top: 60px;
       margin-bottom: 20px;
       padding: 40px 40px;
       width: 100%;
@@ -304,6 +304,7 @@
         }
       }
       @include tablet {
+        top: 70px;
         .sent-1st {
           display: none;
         }
@@ -313,7 +314,7 @@
       }
       @include tabletMore {
         min-height: 240px;
-        position: relative;
+        // position: relative;
         h3 {
           position: absolute;
           top: 40px;

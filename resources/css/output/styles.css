@@ -2607,7 +2607,7 @@ caption {
 }
 .sec-main-process .card-main-4-list .card-main-4 {
   position: sticky;
-  top: 100px;
+  top: 60px;
   margin-bottom: 20px;
   padding: 40px 40px;
   width: 100%;
@@ -2635,6 +2635,9 @@ caption {
   color: #d8d8d8;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
+  .sec-main-process .card-main-4-list .card-main-4 {
+    top: 70px;
+  }
   .sec-main-process .card-main-4-list .card-main-4 .sent-1st {
     display: none;
   }
@@ -2645,7 +2648,6 @@ caption {
 @media (min-width: 1024px) {
   .sec-main-process .card-main-4-list .card-main-4 {
     min-height: 240px;
-    position: relative;
   }
   .sec-main-process .card-main-4-list .card-main-4 h3 {
     position: absolute;
