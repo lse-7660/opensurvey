@@ -45,7 +45,7 @@ function shrinkCardsOnScroll() {
         start: "top 10%",
         end: "top 0%",
         scrub: true,
-        // markers: true,
+        markers: true,
       },
     });
   });
@@ -63,8 +63,7 @@ function genSectionOnScroll(selector) {
       scrollTrigger: {
         trigger: element,
         start: "top center",
-        // end: "+=500",
-        markers: true,
+        // markers: true,
       },
     });
   });
