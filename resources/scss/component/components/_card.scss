@@ -235,16 +235,30 @@
   }
 }
 
-// card3-js 배우고!!
+.card-main-3-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+.card-main-3-list {
+  display: flex;
+  gap: 20px;
+}
+
 .card-main-3 {
   position: relative;
-  background: $primary;
+  width: 20vw;
+  height: 20vw;
   &__img {
     width: 100%;
     height: 100%;
+
     img {
-      aspect-ratio: 1 / 1;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
+      overflow: hidden;
     }
     &::after {
       position: absolute;
@@ -254,10 +268,10 @@
       top: 0;
       left: 0;
       background: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
     }
   }
   &__txt {
-    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -265,9 +279,41 @@
     h3 {
       color: $white;
       text-align: center;
+      font-size: 24px;
     }
     p {
       display: none;
+    }
+  }
+
+  transition: all 0.3s;
+
+  &:hover {
+    width: 40vw;
+    height: 20vw;
+    border: 1px solid $gray-20;
+    background-color: $white;
+    .card-main-3__img {
+      display: none;
+    }
+    .card-main-3__txt {
+      top: 50px;
+      left: 50px;
+      right: 50px;
+      bottom: 50px;
+      transform: translate(0, 0);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3 {
+        color: $gray-90;
+      }
+      p {
+        display: block;
+        color: $gray-90;
+      }
     }
   }
 }
